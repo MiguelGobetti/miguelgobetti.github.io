@@ -1,33 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal do Emprego</title>
-    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
-    <style>
-        /* Adicione estilos específicos do JavaScript aqui se necessário */
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
     <header>
         <h1>PORTAL DO EMPREGO</h1>
         <nav>
-            <button id="toggleNav">Menu</button>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+            <!-- Links de navegação, menu, etc. -->
         </nav>
     </header>
 
-    <!-- Restante do seu conteúdo HTML -->
+    <main>
+        <section class="curso" onclick="exibirMensagem('Curso 1: Como montar um Currículo de Sucesso')">
+            <h2>Curso 1: Como montar um Currículo de Sucesso</h2>
+            <p class="descricao-curso">
+                Destaque-se na busca por emprego com nosso curso prático de currículo. 
+                <br>Aprenda a criar um currículo através dos módulos:<br>
+                <ul>
+                    <li> Currículo ou CV;</li>
+                    <li>Estrutura e Elementos;</li>
+                    <li>Principais dicas para seu Currículo.</li>
+                </ul>
+            </p>
+            <!-- Adicione o vídeo do YouTube aqui -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/H7sIeAT3uKg" frameborder="0" allowfullscreen></iframe>
+        </section>
 
+        <section class="curso" onclick="exibirMensagem('Como se comportar em uma entrevista de emprego')">
+            <h2>Como se comportar em uma entrevista de emprego</h2>
+            <p class="descricao-curso">
+                Neste curso, você aprenderá sobre:
+                <ul>
+                    <li>Como se preparar para uma Entrevista de Emprego;</li>
+                    <li>Qualidades valorizadas neste momento;</li>
+                    <li>Perguntas frequentes em uma Entrevista</li>
+                </ul>
+            </p>
+            <!-- Adicione aqui o conteúdo do segundo curso -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gXe8CItVxZI?si=yyGn4Y0SBNHYA7cd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Rodapé do site -->
+    </footer>
+
+    <!-- Adicionando o script JavaScript -->
     <script>
-        document.getElementById('toggleNav').addEventListener('click', function() {
-            document.querySelector('nav ul').classList.toggle('show');
-        });
+        function exibirMensagem(curso) {
+            alert('Você clicou em ' + curso);
+        }
     </script>
 </body>
 </html>
