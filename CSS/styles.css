@@ -1,25 +1,65 @@
-<style>
-    /* Adicione estilos específicos do JavaScript aqui se necessário */
-    nav ul {
-        display: none;
-        transition: opacity 0.5s ease-in-out;
-    }
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Portal do Emprego</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style>
+        /* Adicione estilos específicos do JavaScript aqui se necessário */
+        nav ul {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
 
-    nav ul.show {
-        display: block;
-        opacity: 1;
-    }
+        nav ul.show {
+            display: block;
+            opacity: 1;
+        }
 
-    button {
-        background-color: #007BFF;
-        color: #fff;
-        padding: 10px 15px;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease-in-out;
-    }
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
 
-    button:hover {
-        background-color: #0056b3;
-    }
-</style>
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05); /* Efeito de escala no hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PORTAL DO EMPREGO</h1>
+        <nav>
+            <button onclick="toggleNav()">Toggle Navegação</button>
+            <ul>
+                <!-- Links de navegação, menu, etc. -->
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seções de cursos aqui -->
+    </main>
+
+    <footer>
+        <!-- Rodapé do site -->
+    </footer>
+
+    <!-- Adicionando o script JavaScript -->
+    <script>
+        function toggleNav() {
+            const navUl = document.querySelector('nav ul');
+            navUl.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
