@@ -1,67 +1,25 @@
-/* Estilos Globais */
-body {
-    font-family: 'Arial', sans-serif;
-    color: #fff; /* Letras brancas para melhor contraste */
-    margin: 0;
-    padding: 0;
-    background-color: #4CAF50; /* Verde para o fundo */
-    background-image: url('fundo_caixa1.jpg'); /* Adicione a imagem de fundo */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-header {
-    background-color: #4CAF50; /* Verde */
-    color: #fff; /* Branco para o texto do cabeçalho */
-    padding: 20px;
-    text-align: center;
-}
-
-nav {
-    margin-top: 10px;
-}
-
-nav a {
-    color: #fff; /* Branco para os links de navegação */
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-/* Estilos para os cursos */
-.curso {
-    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com mais opacidade para melhor contraste */
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.curso h2 {
-    color: #4CAF50; /* Verde para o título do curso */
-    font-size: 24px;
-    margin-top: 0;
-}
-
-.descricao-curso {
-    font-size: 16px;
-}
-
-/* Estilos para links */
-a {
-    color: #4CAF50; /* Verde para os links */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-@media screen and (max-width: 768px) {
-    /* Estilos para telas menores, como celulares */
-    body {
-        background-size: contain;
+<style>
+    /* Adicione estilos específicos do JavaScript aqui se necessário */
+    nav ul {
+        display: none;
+        transition: opacity 0.5s ease-in-out;
     }
-    .curso {
-        background-color: rgba(255, 255, 255, 0.95); /* Aumentando ainda mais a opacidade para melhor legibilidade */
+
+    nav ul.show {
+        display: block;
+        opacity: 1;
     }
-}
+
+    button {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
