@@ -46,3 +46,10 @@ main {
   background-color: #ffffff;
   color: #f5025d;
 }
+
+/* Estilo para o logotipo */
+.logo-container img {
+  max-width: 150px; /* Ajuste este valor conforme necessário */
+  height: auto; /* Mantém a proporção do logotipo */
+}
+
