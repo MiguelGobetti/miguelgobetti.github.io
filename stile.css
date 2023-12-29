@@ -9,9 +9,10 @@ header {
   text-align: center;
   padding: 20px;
 }
-
+/* Estilo para o logotipo */
 .logo-container img {
-  border-radius: 50%;
+  max-width: 150px; /* Ajuste este valor conforme necessário */
+  height: auto; /* Mantém a proporção do logotipo */
 }
 
 main {
